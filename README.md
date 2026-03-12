@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# NodeShift Game 🌱
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **NodeShift**, a full-stack game application featuring a React frontend and a Python (Flask) backend!
 
-## Available Scripts
+I'm incredibly excited to share this project because **it marks my very first deployment!** 
+It's been a challenging but incredibly rewarding learning experience. I've been able to bring together different technologies—connecting a web interface to a backend API—and finally see it all working together live. I still have a lot to learn, but I'm proud of this milestone and excited for what comes next!
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🏗️ Project Architecture
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: Built with [React](https://reactjs.org/) to create an interactive and fluid grid-based user interface. I'm learning how components and state make Building UIs much more manageable.
+- **Backend**: Powered by Python and [Flask](https://flask.palletsprojects.com/), providing the REST API endpoints and managing game states/leaderboards.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started Locally
 
-### `npm test`
+If you'd like to poke around the code or run this project on your own machine, I'd love for you to try it out!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Set Up the Backend
+1. Open a terminal and navigate to the `server` directory:
+   ```bash
+   cd server
+   ```
+2. Create and activate a Python virtual environment:
+   ```bash
+   python -m venv venv
+   
+   # On Windows (PowerShell):
+   .\venv\Scripts\Activate.ps1
+   
+   # Or on Mac/Linux: 
+   source venv/bin/activate
+   ```
+3. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Start the Flask server:
+   ```bash
+   python app.py
+   ```
+   *The server will run on `http://localhost:5000`.*
 
-### `npm run build`
+### 2. Set Up the Frontend
+1. Open a new terminal and navigate to the root directory:
+   ```bash
+   cd test_app
+   ```
+2. Install the necessary Node modules:
+   ```bash
+   npm install
+   ```
+3. Start the React development server:
+   ```bash
+   npm start
+   ```
+   *The app should automatically open in your browser at `http://localhost:3000`.*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌟 Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Fluid UI**: Smooth tile animations and a dark-themed aesthetic.
+- **RESTful API**: Python backend securely handling leaderboard submissions.
+- **Cross-Origin Resource Sharing (CORS)**: Properly configured to allow seamless communication between the React app and Flask server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Thank you so much for checking out my first deployment project! I'm always looking to improve, so any feedback, tips, or suggestions are incredibly appreciated.*

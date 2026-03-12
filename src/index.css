@@ -1,13 +1,40 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --grid-bg: #222222;
+  --tile-empty: #333333;
+  
+  /* Neon Accent Colors based on tile values */
+  --color-2: #00ffff; /* Cyan */
+  --color-4: #ff00ff; /* Magenta */
+  --color-8: #ffff00; /* Electric Yellow */
+  --color-16: #00ff00; /* Neon Green */
+  --color-32: #ff4500; /* Bright Orange */
+  --color-64: #ff0055; /* Hot Pink */
+  --color-128: #00bfff; /* Deep Sky Blue */
+  --color-256: #8a2be2; /* Blue Violet */
+  --color-512: #ff1493; /* Deep Pink */
+  --color-1024: #7fff00; /* Chartreuse */
+  --color-2048: #ffffff; /* White Glow */
+  --color-super: #ffd700; /* Gold */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden; /* Prevent scrolling on mobile during swipes */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
 }
